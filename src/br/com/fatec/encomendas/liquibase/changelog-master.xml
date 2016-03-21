@@ -103,47 +103,47 @@
 	<changeSet id="010" author="clelio.ribeiro">
 		<addForeignKeyConstraint constraintName="FK_VIAGEMENCOMENDA_VIAGEN"
 			referencedTableName="VIAGEM" baseColumnNames="ID" baseTableName="VIAGEM_ENCOMENDA"
-			referencedColumnNames="VIAGEM_ID" />
+			referencedColumnNames="ID_VIAGEM" />
 
 		<addForeignKeyConstraint constraintName="FK_VIAGEMENCOMENDA_ENCOMENDA"
 			referencedTableName="ENCOMENDA" baseColumnNames="ID" baseTableName="VIAGEM_ENCOMENDA"
-			referencedColumnNames="ENCOMENDA_ID" />
+			referencedColumnNames="ID_ENCOMENDA" />
 
 		<addForeignKeyConstraint constraintName="FK_ENCOMENDA_USUARIO"
 			referencedTableName="USUARIO" baseColumnNames="ID" baseTableName="ENCOMENDA"
-			referencedColumnNames="USUARIO_ID" />
+			referencedColumnNames="ID_USUARIO" />
 
 		<addForeignKeyConstraint constraintName="FK_OCORRENCIA_ENCOMENDA"
 			referencedTableName="ENCOMENDA" baseColumnNames="ID" baseTableName="OCORRENCIA"
-			referencedColumnNames="ENCOMENDA_ID" />
+			referencedColumnNames="ID_ENCOMENDA" />
 
 		<addForeignKeyConstraint constraintName="FK_OCORRENCIA_VIAGEM"
 			referencedTableName="VIAGEM" baseColumnNames="ID" baseTableName="OCORRENCIA"
-			referencedColumnNames="VIAGEM_ID" />
+			referencedColumnNames="ID_VIAGEM" />
 
 		<addForeignKeyConstraint constraintName="FK_VIAGEM_VEICULO"
 			referencedTableName="VEICULO" baseColumnNames="ID" baseTableName="VIAGEM"
-			referencedColumnNames="VEICULO_ID" />
+			referencedColumnNames="ID_VEICULO" />
 
 		<addForeignKeyConstraint constraintName="FK_VEICULO_ZONA"
 			referencedTableName="ZONA" baseColumnNames="ID" baseTableName="VEICULO"
-			referencedColumnNames="ZONA_ID" />
+			referencedColumnNames="ID_ZONA" />
 
 		<addForeignKeyConstraint constraintName="FK_USUARIO_ENDERECO"
 			referencedTableName="ENDERECO" baseColumnNames="ID" baseTableName="USUARIO"
-			referencedColumnNames="ENDERECO_ID" />
+			referencedColumnNames="ID_ENDERECO" />
 
 		<addForeignKeyConstraint constraintName="FK_ENDERECO_CIDADE"
 			referencedTableName="CIDADE" baseColumnNames="ID" baseTableName="ENDERECO"
-			referencedColumnNames="CIDADE_ID" />
+			referencedColumnNames="ID_CIDADE" />
 
 		<addForeignKeyConstraint constraintName="FK_ENDERECO_ZONA"
 			referencedTableName="ZONA" baseColumnNames="ID" baseTableName="ENDERECO"
-			referencedColumnNames="ZONA_ID" />
+			referencedColumnNames="ID_ZONA" />
 
 		<addForeignKeyConstraint constraintName="FK_CIDADE_ESTADO"
 			referencedTableName="ESTADO" baseColumnNames="ID" baseTableName="CIDADE"
-			referencedColumnNames="ESTADO_ID" />
+			referencedColumnNames="ID_ESTADO" />
 
 	</changeSet>
 </databaseChangeLog>
